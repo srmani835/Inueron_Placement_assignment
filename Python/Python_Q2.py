@@ -15,7 +15,7 @@ Example output 2 - NO
 """
 
 #Ans:
-def is_valid(s):
+def is_valid_string(s):
     freq = {}
     for char in s:
         if char in freq:
@@ -38,12 +38,12 @@ def is_valid(s):
 
 # Example input 1
 
-s = "abc"
-print(is_valid(s))  
+s = "def"
+print(is_valid_string(s))  
 
 # Example output 1 - YES
 
-# Explaination: This is a valid string because frequencies are { “a”: 1, “b”: 1, “c”: 1 }
+# Explaination: This is a valid string because frequencies are { “d”: 1, “e”: 1, “”: 1 }
 
 # Example input 2
 
