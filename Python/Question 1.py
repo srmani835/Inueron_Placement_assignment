@@ -15,7 +15,7 @@ Explaination - From the given string we can note that the most frequent words ar
 
 # Ans:
 
-def find_highest_frequency_word_length(string):
+def highest_frequency_word_length(string):
     words = string.split()
 
     word_freq = {}
@@ -34,37 +34,26 @@ def find_highest_frequency_word_length(string):
 
 #Example test case
 
-string = "write write write all the number from from from 1 to 100"
-result = find_highest_frequency_word_length(string)
+string = "hello hello hello hello i am python"
+result = highest_frequency_word_length(string)
 print(result)
 
 # Example output - 5
 
 
-# Explaination: In the given example, the word "write" appears three times, making it the most frequent word. Its length is 5 characters, so the program returns 5.
+# Explaination: In the given example, the word "hello" appears three times, making it the most frequent word. Its length is 5 characters, so the program returns 5.
 
 
 # Additional Test Cases:
 
 # Test case with a single word repeated multiple times:
 
-string = "hello hello hello hello hello"
+string = "fight fight till you win win win win win"
 result = find_highest_frequency_word_length(string)
 print(result)
 
 
-# Explaination: In this case, the word "hello" appears five times, which is the highest frequency. Its length is 5 characters, so the program returns 5.
-
-
-# Test case with different words having the same frequency:
-
-
-string = "apple orange banana apple orange banana apple orange banana"
-result = find_highest_frequency_word_length(string)
-print(result)
-
-
-# Explaination: In this case, the words "apple," "orange," and "banana" appear three times each, making their frequency the highest. Among these words, "banana" has the longest length of 6 characters, so the program returns 6.
+# Explaination: In this case, the word "win" appears five times, which is the highest frequency. Its length is 3 characters, so the program returns 3.
 
 
 
